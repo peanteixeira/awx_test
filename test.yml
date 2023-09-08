@@ -1,7 +1,6 @@
-- name: "Ansible | Print multiple variable"
-  debug:
-    msg: |
-      {{ ansible_port}}
-      {{ ansible_user }}
-      {{ private_key_file }}
-      {{ ansible_ssh_common_args }}
+- name: Hello World Sample
+  hosts: all
+  tasks:
+    - name: Hello Message
+      debug:
+        msg: "Hello World!"
